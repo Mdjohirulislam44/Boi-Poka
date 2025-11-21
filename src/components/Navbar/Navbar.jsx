@@ -6,7 +6,8 @@ const Navbar = () => {
     const links = 
     <>
      <li><NavLink to='/'>Home</NavLink></li>
-    <li><a>Item 3</a></li>
+   <li><NavLink to='/listedBooks'>listed books</NavLink></li>
+
     </>
     return (
        <div className="navbar bg-base-100 shadow-sm">
@@ -21,15 +22,16 @@ const Navbar = () => {
        { links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">BOI POKA</a>
+    <a className="btn btn-ghost text-xl">Book Vibe</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
      {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className=" flex navbar-end gap-2">
+    <a className="btn bg-green-500 rounded-sm">sing in</a>
+    <a className="btn bg-green-300">sing up</a>
   </div>
 </div>
     );

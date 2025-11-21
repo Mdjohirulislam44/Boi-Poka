@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Book = ({ book }) => {
-  const { image, bookName, author, tags, category } = book;
+  const { bookId,image, bookName, author, tags, category } = book;
   return (
-    <div className="card bg-base-100 w-96 shadow-sm p-6">
+    <Link to={`/books/${bookId}`}>
+     <div className="card bg-base-100 w-96 shadow-sm p-6">
       <figur className="bg-blue-200 py-8 pl-32 rounded-2xl">
         <img src={image} className="h-[166px]" alt={bookName} />
       </figur>
@@ -57,6 +59,8 @@ const Book = ({ book }) => {
           </div>
         </div>
       </div>
+    </Link>
+    
   
   );
 };

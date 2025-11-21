@@ -13,9 +13,11 @@
     "@tailwindcss/vite": "^4.1.17",
     "localforage": "^1.10.0",
     "match-sorter": "^8.1.0",
+    "rc-tabs": "^15.7.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.6",
+    "react-toastify": "^11.0.5",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
